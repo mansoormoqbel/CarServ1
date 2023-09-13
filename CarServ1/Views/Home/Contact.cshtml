@@ -1,0 +1,117 @@
+﻿@* @model CarServ.Models.Contact *@
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@section MainSection{
+    <!-- Page Header Start -->
+    <div class="hide-for-large cell small-12 small-order-2" style="display: flex;">
+        <div style="flex: 5;">
+            <div class="container-fluid page-header-inner py-5" style="display: flex; background-color: #F6F6F4;">
+                <div class="container text-start m-lg-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown" style="font-size:40px;"><span class="text-black">Contact</span></h1>
+                    <nav aria-label="breadcrumb" class="text-black" style="font-size:20px">
+                        <p>For technicians known for their work and their word, trust the experts at CarSer.</p>
+                        <a href="/Service/Booking/#book" class="btn btn-primary py-2 px-4">Request Order</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 3;">
+            <img src="~/asset/images/Header-Services.jpg" alt="Image" style="width: 100%; height: 100%;">
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase">// Contact Us //</h6>
+                <h1 class="mb-5">Contact For Any Query</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="row gy-4">
+                        <div class="col-md-4">
+                            <div class="bg-light d-flex flex-column justify-content-center p-4">
+                                <h5 class="text-uppercase">// Booking //</h5>
+                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light d-flex flex-column justify-content-center p-4">
+                                <h5 class="text-uppercase">// General //</h5>
+                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light d-flex flex-column justify-content-center p-4">
+                                <h5 class="text-uppercase">// Technical //</h5>
+                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*
+            32.02397673920357, 35.875423888573124
+            *@
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <iframe class="position-relative rounded w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d35.875423888573124!3d32.02397673920357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMywzM4KwMjEnNTUuMCJTIDM1wrAxNzEnMzUuMCJF!5e0!3m2!1sen!2sus!4v1603794290143!5m2!1sen!2sus&z=12"
+                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                </div>
+
+                <div class="col-md-6">
+                    @* <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <p class="mb-4">Discover top-rated repair shops, certified car inspection sites, and premium laundries on our car services website. Your one-stop destination for automotive care.</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        @Html.TextBox("FullName",null,new{@class = "form-control",id="name",placeholder="Your Name "})
+                                        @Html.Label("Your Full Name")
+                                        <span asp-validation-for="FullName" class="text-danger"></span>
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        @Html.TextBox("Email",null,new{@class = "form-control",id="email",placeholder="Your Email "})
+                                        @Html.Label("Your Email")
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        @Html.TextBox("Subject",null,new{@class = "form-control", id ="subject", placeholder ="Subject"})
+                                        @Html.Label("Subject")
+                                        <span asp-validation-for="Subject" class="text-danger"></span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        @Html.TextArea("Message",null,new{@class = "form-control", placeholder = "Leave a message here", id = "message", style = "height: 100px"})
+                                        @Html.Label("Message")
+                                        <span asp-validation-for="Message" class="text-danger"></span>
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> *@
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+}
+
+

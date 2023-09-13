@@ -1,0 +1,178 @@
+﻿@{
+    ViewData["Title"] = "DiagnosticTest";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+@section MainSection{
+    <!-- Page Header Start -->
+    <div class="hide-for-large cell small-12 small-order-2" style="display: flex;">
+        <div style="flex: 5;">
+            <div class="container-fluid page-header-inner py-5" style="display: flex; background-color: #F6F6F4;">
+                <div class="container text-start m-lg-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown" style="font-size:40px;">
+                        <span class="text-black">
+                            Diagnostic
+                        </span><span class="text-primary">Test</span>
+                    </h1>
+                    <nav aria-label="breadcrumb" class="text-black" style="font-size:20px">
+                        <p>For technicians known for their work and their word, trust the experts at CarSer.</p>
+                        <a href="/Service/Booking/#book" class="btn btn-primary py-2 px-4">Booking</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 3;">
+            <div class="container-fluid" style="display: flex; background-color: #F6F6F4;height:296px;position:relative;">
+                <img src="~/asset/images/CloserLook.jpg" alt="Image" style="width: 97.9%; height:296px; position:absolute;clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%); ">
+            </div>
+        </div>
+    </div>
+
+    @* clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+<div class="container-fluid" style="display: flex; background-color: #F6F6F4;height:296px;">
+
+            </div>
+        *@
+
+    <!-- Page Header End -->
+
+
+    @* --------------------------------------------------------------- *@
+
+    <section id="topic">
+        <div class="container-md">
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header mb-4">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapse-1" style="box-shadow: none;border: none;">
+                                <h1><span class="text-secondary">Observations</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h5 class="mb-4"><span class="text-primary">Dash Indicator Lights</span></h5>
+                                <p class="mb-4">All dash indicator lights turn on and then off when your car starts as a quick system check. This on-off behavior also shows your service technician which bulbs may be burned out.</p>
+                                <h5 class="mb-4"><span class="text-secondary">Road Test</span></h5>
+                                <p class="mb-4">When you’re used to driving your vehicle every day, it’s easy to get comfortable with things that might be affecting your safety. We may take your car your car for a quick spin to check noise, drivability, handling, and more.</p>
+                                <h5 class="mb-4"><span class="text-primary">Wipers</span></h5>
+                                <p class="mb-4">Rain with working wipers? No problem. Rain with worn wipers? Big prob…lookout! Whether you need a quick repair, or heavier blades for winter, we’ll make sure your wiper blades and system are up to task.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">Electrical</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h5 class="mb-4"><span class="text-primary">Exterior Lights</span></h5>
+                                <p class="mb-4">We all know how dangerous driving can be with a light out. But oftentimes you don’t know a bulb is out until someone tells you. We’ll check all your exterior lights to keep you and your fellow drivers safe.</p>
+                                <h5 class="mb-4"><span class="text-secondary">Battery/Cables</span></h5>
+                                <p class="mb-4">Corroded battery terminals or cables rob your engine of starting power. Missing battery hold-downs or insulation may cause premature battery failure. We’ll check it all out, so you don’t have to worry about getting stranded.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapse-3" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">Mechanical Systems</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h5 class="mb-4"><span class="text-primary">Exhaust System</span></h5>
+                                <p class="mb-4">Leaks, rattles, broken clamps or hangers are all potential exhaust system conditions. The entire system from engine manifold to tailpipe should be inspected. Leaking exhaust fumes can enter the passenger compartment. Even a small exhaust leak can affect engine performance and result in higher pollution emissions.</p>
+                                <h5 class="mb-4"><span class="text-secondary">Steering System</span></h5>
+                                <p class="mb-4">Loose or binding steering indicates worn parts that can cause poor alignment and premature tire wear. Cracked or broken grease boots can cause premature part failure.</p>
+                                <h5 class="mb-4"><span class="text-primary">Shocks & Struts</span></h5>
+                                <p class="mb-4">Worn or badly leaking shocks and struts can cause braking problems and premature suspension wear. A cracked or broken mount will cause noise over bumps.</p>
+                                <h5 class="mb-4"><span class="text-secondary">Driveline & Transmission</span></h5>
+                                <p class="mb-4">Un-lubricated, noisy CV joints or U-joints are likely to fail soon. A torn CV boot indicates probable CV joint damage. Cracked boots or missing clamps may be repairable. A broken driveline component will allow the engine to run, but the vehicle may not move.</p>
+                                <h5 class="mb-4"><span class="text-primary">FR & R Differential/Transfer Case</span></h5>
+                                <p class="mb-4">Your differential or transfer case transfers the torque coming out of the transmission to the wheels. If there’s a problem, your vehicle could end up operating at reduced power.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-4" aria-expanded="false" aria-controls="flush-collapse-4" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">Fluids</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h5 class="mb-4"><span class="text-primary">Window Washer Fluid</span></h5>
+                                <p class="mb-4">Topped-off window washer fluid reservoirs are necessary for clear visibility in all types of driving conditions. For clearing bugs to road salt, washer fluid is a must-have.</p>
+                                <h5 class="mb-4"><span class="text-secondary">Engine Oil</span></h5>
+                                <p class="mb-4">Regular oil changes are the best protection against internal engine damage. Clean, quality oil also helps reduce emissions and improve fuel mileage.</p>
+                                <h5 class="mb-4"><span class="text-primary">Coolant</span></h5>
+                                <p class="mb-4">Replacing engine coolant renews corrosion protection for the radiator, water pump, and coolant system gaskets while maintaining both freeze and boil-over protection.</p>
+                                <h5 class="mb-4"><span class="text-secondary">Brake Fluid</span></h5>
+                                <p class="mb-4">Replacing the brake fluid helps maintain correct pedal pressure and prevent corrosion deposits from forming on Anti-lock Brake System pumps and other brake hydraulic parts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-5" aria-expanded="false" aria-controls="flush-collapse-5" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">Belts Hoses and Filters</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h5 class="mb-4"><span class="text-primary">Engine Air Filter</span></h5>
+                                <p class="mb-4">Dirty air filters contribute to poor engine performance and lower fuel mileage. Missing or damaged filters allow dirt directly into the engine and may cause premature engine wear.</p>
+                                <h5 class="mb-4"><span class="text-secondary">Cabin Air Filter</span></h5>
+                                <p class="mb-4">Notice any smells in your car? Does your hay fever act up? Our CarServ technicians will make sure your filters aren’t letting any unwanted particles into your vehicle.</p>
+                                <h5 class="mb-4"><span class="text-primary">Hoses</span></h5>
+                                <p class="mb-4">Road conditions and undercarriage corrosion can cause cracks or wear in the steel lines and rubber hoses that carry fuel and brake fluid underneath your vehicle, causing potential safety hazards.</p>
+                                <h5 class="mb-4"><span class="text-secondary">Belts (except Timing Belts)</span></h5>
+                                <p class="mb-4">Worn or frayed belts should always be replaced. Most modern vehicles use just one belt to operate the water pump, alternator, power steering pump, and A/C. Broken belts can cause overheating, electrical, and steering system failure, leading to roadside breakdowns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-6" aria-expanded="false" aria-controls="flush-collapse-6" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">Tires</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="mb-4">As the only parts of your vehicle that actually make contact with the road, we take tires very seriously. A worn tire could cause longer braking distances, decreased fuel mileage and even alter your vehicle's ride and handling. Not to mention leaving you stranded on the road. We’ll check their pressure, tread depth, wear, alignment and more to make sure your tires are safe, effective and efficient.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-7" aria-expanded="false" aria-controls="flush-collapse-7" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">Brakes</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-7" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="mb-4">Brake pads wear out. Air gets into brake lines. A dozen things can go wrong to make your car not stop the way it should. Our Midas Auto Service Experts® will take a closer look at your brakes, to make sure you’re always in control.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center">
+                    <div class="bg-primary d-flex flex-column justify-content-center text-center h-100 p-1">
+                        @* <h3 class="text-white mb-4"><i></i>View ALL Caragat</h3>
+                    <a href="/Service/Technicians" class="btn btn-secondary py-3 px-5">Go<i class="fa fa-arrow-right ms-3"></i></a> *@
+                        <a href="/Service/Technicians" class="btn btn-primary py-3 px-3">View ALL Caragat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    }
+
+
+

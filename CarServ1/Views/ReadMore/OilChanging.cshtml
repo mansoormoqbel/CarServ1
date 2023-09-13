@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "OilChanging";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+@section MainSection{
+
+    <!-- Page Header Start -->
+    <div class="hide-for-large cell small-12 small-order-2" style="display: flex;">
+        <div style="flex: 5;">
+            <div class="container-fluid page-header-inner py-5" style="display: flex; background-color: #F6F6F4;">
+                <div class="container text-start m-lg-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown" style="font-size:40px;">
+                        <span class="text-black">
+                            Oil
+                        </span><span class="text-primary">Changing</span>
+                    </h1>
+                    <nav aria-label="breadcrumb" class="text-black" style="font-size:20px">
+                        <p>For technicians known for their work and their word, trust the experts at CarSer.</p>
+                        <a href="/Service/Booking/#book" class="btn btn-primary py-2 px-4">Booking</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 3;">
+            <div class="container-fluid" style="display: flex; background-color: #F6F6F4;height:296px;position:relative;">
+                <img src="~/asset/images/OilChange.jpg" alt="Image" style="width: 97.9%; height:296px; position:absolute;clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%); ">
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    @* --------------------------------------------------------------- *@
+
+    <section id="topic">
+        <div class="container-md">
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header mb-4">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapse-1" style="box-shadow: none;border: none;">
+                                <h1><span class="text-secondary">Why regular oil changes are important ?</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="mb-4">Oil is the lifeblood of your engine. It reduces friction, lessens wear, lubricates metal engine parts, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts. Without the cleaning action of fresh oil, carbon and varnish buildup would be toxic to the engine.</p>
+                                <p class="mb-4">Want to help your engine run efficiently, maximize fuel economy, minimize emissions, and prolong the life of your car? Change your oil at the vehicle manufacturer's recommended intervals.</p>
+                                <h5 class="mb-4">How long does an oil change take?</h5>
+                                <p class="mb-4">A Midas oil change takes about 60 minutes and includes oil and filter change as well as our complimentary Midas Closer Look Vehicle Check™. Oil Change Plus customers should allow another 15 minutes for tire rotation. A do-it-yourself oil change can take up to an hour, depending on how easily you can access the oil drain plug and filter on your vehicle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">Types of Motor Oil</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="mb-4">
+                                    <li>Conventional motor oil is derived from crude oil with a variety of additives.</li>
+                                    <li>Synthetic motor oil is derived from man-made ingredients with a variety of additives. Full synthetic oil protects your engine better than conventional oil due to the purity and uniform molecular structure of these man-made ingredients -- with added environmental benefits. Cost-saving synthetic blend oils are also available. Compare conventional oil vs. synthetic oil.</li>
+                                    <li>High mileage motor oil contains anti-wear additives to prolong engine life in vehicles with 75,000 miles or more. It’s available in conventional, synthetic blend, and full synthetic oil formulas.</li>
+                                </ul>
+                                <p class="mb-4">Your CarServ mechanic can help you choose the right motor oil for your vehicle and driving style – and we’ll never put any oil in your vehicle that fails to meet its manual specifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapse-3" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">How often should oil be changed ?</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="mb-4">For vehicles made in the past decade or so, automakers usually recommend changing the oil every 5,000 to 7,500 miles, with even higher intervals for certain models. Most owner’s manuals now specify synthetic blend or full synthetic oil in concert with these longer oil change intervals. Manufacturers recommend changing the oil every 3,000 miles for many older vehicles and certain engine types. The 3,000-mile oil change might be a sensible tradition to keep alive if you choose conventional oil.</p>
+                                <p class="mb-4">However, check your manual – and heed your vehicle’s oil change reminder if it triggers between oil changes, regardless of the old adage of every 3,000-miles. (On some vehicles, it takes your actual driving patterns into account.) And if you aren’t reaching the mileage guideline each year, follow your manual’s timed oil change interval instead.</p>
+                                <h5 class="mb-4">How do driving conditions affect oil change frequency?</h5>
+                                <p class="mb-4">Check your vehicle’s manufacturer recommendations to see if “severe” driving conditions mean more frequent oil changes. And the definition of severe might surprise you! If your driving consists mostly of short trips in stop-and-go traffic or driving in “extreme temperatures” (which most of us call ordinary hot summers and cold winters), your vehicle manufacturer may recommend more frequent oil changes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-4" aria-expanded="false" aria-controls="flush-collapse-4" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">Signs your car needs an oil change</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="mb-4">It’s best to follow your regular maintenance schedule. But here are some ways your car might tell you it’s ready for an oil and filter change:</p>
+                                <ul class="mb-4">
+                                    <li>Your dashboard oil reminder: In newer vehicles, this light or text message takes your actual driving conditions into account.</li>
+                                    <li>Dark oil on your dipstick: Fresh engine oil is transparent and light brown or amber. Dirty oil is dark brown or black -- and too opaque to see through.</li>
+                                    <li>Overheating: Poor lubrication also makes your engine work harder, which can generate excess heat.</li>
+                                    <li>Grinding or tapping noises -- these may be the dreaded “metal on metal” sounds, warning you that your oil level is too low to protect your engine.</li>
+                                </ul>
+                                <h5 class="mb-4">And don’t ignore oil leaks!</h5>
+                                <p class="mb-4">Any fluid leak needs immediate attention -- it shouldn’t wait till your next oil change. Often, an oil leak is an easy fix, like replacing a filter or tightening a bolt. But an unchecked oil leak can lead to catastrophic engine failure and serious fire hazards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-5" aria-expanded="false" aria-controls="flush-collapse-5" style="box-shadow: none;border: none;">
+                                <h1 class="mb-4"><span class="text-secondary">See either of these symptoms?</span></h1>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="mb-4">
+                                    <li>Fluid under your vehicle or on engine parts.</li>
+                                    <li>Blue smoke or a burning odor from your exhaust.</li>
+                                </ul>
+                                <p class="mb-4">Request an oil and fluid diagnosis appointment ASAP if you see these symptoms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center">
+                    <div class="bg-primary d-flex flex-column justify-content-center text-center h-100 p-1">
+                        @* <h3 class="text-white mb-4"><i></i>View ALL Caragat</h3>
+                    <a href="/Service/Technicians" class="btn btn-secondary py-3 px-5">Go<i class="fa fa-arrow-right ms-3"></i></a> *@
+                        <a href="/Service/Technicians" class="btn btn-primary py-3 px-3">View ALL Caragat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
